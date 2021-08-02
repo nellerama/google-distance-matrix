@@ -44,7 +44,7 @@ var GoogleDistanceMatrix = function() {
 };
 
 function formatLocations(locations) {
-  return locations.join(SEPARATOR);
+  return locations;
 }
 
 function makeRequest(options, callback) {
