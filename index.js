@@ -30,6 +30,7 @@ var GoogleDistanceMatrix = function() {
     mode: 'driving',
     units: 'metric',
     language: 'en',
+    region:null,
     avoid: null
   }
   if (GOOGLE_CLIENT_KEY && GOOGLE_SIGNATURE_KEY) {
@@ -158,6 +159,7 @@ GoogleDistanceMatrix.prototype.reset = function() {
     mode: 'driving',
     units: 'metric',
     language: 'en',
+    region: null,
     avoid: null
   };
 }
