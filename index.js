@@ -143,6 +143,10 @@ GoogleDistanceMatrix.prototype.transit_mode = function(transitMode) {
   this.options.transit_mode = transitMode;
 }
 
+GoogleDistanceMatrix.prototype.region = function(region) {
+  this.options.region = region;
+}
+
 GoogleDistanceMatrix.prototype.transit_routing_preference = function(transitRoutingPreference) {
   this.options.transit_routing_preference = transitRoutingPreference;
 }
