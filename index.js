@@ -50,7 +50,6 @@ function formatLocations(locations) {
 function makeRequest(options, callback) {
   debug("request options", options)
   var requestURL = GOOGLE_DISTANCE_API_URL + qs.stringify(options, GOOGLE_DISTANCE_API_URL);
-  console.log(requestURL);
   debug("requestURL", requestURL)
   request(requestURL, function(err, response, data) {
     if (err || response.statusCode != 200) {
